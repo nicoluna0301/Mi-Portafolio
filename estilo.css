@@ -35,11 +35,35 @@ section {
     padding: 40px 10% ;        
 }
 
+.biografia {
+background-color: #0055ff; 
+    padding: 20px;
+    font-size: 20px;
+    color: white;
+    border-radius: 100px;
+    border: 3px solid #ddd;       
+}
+
+.sobre-mi {
+background-color: #3b559b77; 
+    padding: 20px;
+    font-size: 20px;
+    color: white;
+    border-radius: 100px;
+    border: 3px solid #ddd;       
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+
+}
+
 .contenedor-habilidades {
     display: flex;
     flex-wrap: wrap;          
     gap: 15px;
     justify-content: center;
+        background-color: #476b7362;
 }
 
 .tarjeta {
@@ -48,7 +72,8 @@ section {
     border-radius: 10px;      
     border: 1px solid #ddd;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
-    transition: transform 0.3s ease;      
+    transition: transform 0.3s ease;     
+    
 }
 
 .tarjeta:hover {
