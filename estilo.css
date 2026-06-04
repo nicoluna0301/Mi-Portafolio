@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;    
+    color: #333;                 
+    line-height: 1.6;             
+}
+header {
+    background: linear-gradient(to right, #4f46e5, #06b6d4); 
+    color: white;            
+    padding: 60px 20px;        
+    text-align: center;        
+}
+header h1 {
+    font-size: 3rem;           
+    text-transform: uppercase; 
+}
+nav ul {
+    display: flex;             /* Activa Flexbox [10] */
+    justify-content: center;   /* Centra los enlaces horizontalmente [12] */
+    list-style: none;          /* Quita las viñetas de la lista [5] */
+    gap: 20px;                 /* Espacio uniforme entre ítems [13] */
+    margin-top: 20px;
+}
+nav a {
+    color: white;
+    text-decoration: none;     /* Quita el subrayado por defecto [5] */
+    transition: color 0.3s ease; /* Transición suave para el color [14] */
+}
+
+nav a:hover {
+    color: #fbbf24;            /* Cambia a amarillo al pasar el mouse [11, 15] */
+    text-decoration: underline;/* Aparece subrayado en hover [15] */
+}
+section {
+    padding: 40px 10% ;        /* Márgenes laterales responsivos [18] */
+}
+
+.contenedor-habilidades {
+    display: flex;
+    flex-wrap: wrap;           /* Permite que las tarjetas bajen si no hay espacio [13] */
+    gap: 15px;
+    justify-content: center;
+}
+
+.tarjeta {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;       /* Bordes redondeados [19] */
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Sombra suave [16] */
+    transition: transform 0.3s ease;       /* Preparar para efecto hover [20] */
+}
+
+.tarjeta:hover {
+    transform: translateY(-10px); /* La tarjeta se eleva al pasar el mouse [16, 17] */
+    border-color: #4f46e5;
+}
+input:focus {
+    border: 2px solid #4f46e5; /* Resalta el campo activo [23] */
+    outline: none;
+}
+
+/* Colores basados en si el campo es válido o no [22] */
+input:invalid {
+    border-bottom: 2px solid red; 
+}
+
+button {
+    background-color: #4f46e5;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Transición para múltiples propiedades [20] */
+}
+
+button:active {
+    transform: scale(0.95);    /* Efecto de "presionado" al hacer clic [24] */
+}
+footer {
+    background-color: #1f2937; /* Fondo oscuro [25] */
+    color: #9ca3af;            /* Gris claro para el texto */
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+

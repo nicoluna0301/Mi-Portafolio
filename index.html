@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="estilo.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Developer</title>
+    
+</head>
+<body>
+     <header id="inicio">
+        <h1>Nicolas Luna</h1>
+        <p>Estudiante de desarro web</p>
+        <nav>
+            <ul>
+                <li><a href="#sobre-mi">Tengo 20 años</a></li>
+                <li><a href="#habilidades">se cantar</a></li>
+                <li><a href="#contacto">nicoluna0301@gmail.com</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sobre-mi">
+            <h2>Sobre mí</h2>
+            <article>
+                <p>Se usasr <strong>HTML, CSS, JavaScript</strong>. Se entender rapido las instrucciones que me y me especializo en el desarrollo de sitios web responsivos, aplicaciones web interactivas y soluciones enfocadas en la experiencia del usuario.</p>
+                <p>Puedes incluir una cita favorita con <code>&lt;blockquote&gt;</code> [6].</p>
+            </article>
+        </section>
+
+        <section id="habilidades">
+            <h2>Mis habilidades:</h2>
+            <div class="contenedor-habilidades">
+                <!-- Usaremos Flexbox para organizar estas tarjetas [1, 7] -->
+                <div class="tarjeta">HTML5</div>
+                <div class="tarjeta">CSS</div>
+                <div class="tarjeta">Flexbox</div>
+            </div>
+        </section>
+            
+        
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form action="#" method="POST">
+                <fieldset>
+                    <legend>Enviame un mensaje</legend>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <button type="submit">Enviar</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+  
+</body>
+</html>
