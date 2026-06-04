@@ -109,5 +109,16 @@ footer {
     transform: scale(1.05); 
 }
 .tarjeta {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: white; /* Color inicial */
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    /* El siguiente paso es vital para la suavidad */
+    transition: background-color 0.3s ease; 
+}
+
+/* Estado cuando el mouse está encima */
+.tarjeta:hover {
+    background-color: #f0f0f0; /* Nuevo color al pasar el mouse */
+    cursor: pointer; /* Cambia el cursor para indicar que es interactivo */
 }
