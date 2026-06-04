@@ -135,3 +135,57 @@ footer {
     border: 1px solid #ddd;
     transition: 0.3s ease; 
 }
+
+/* Diseño para celulares */
+@media (max-width: 768px) {
+
+    header {
+        padding: 40px 15px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    .perfil-contenedor {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .foto-perfil {
+        width: 150px;
+        height: 150px;
+    }
+
+    .biografia,
+    .sobre-mi {
+        border-radius: 20px;
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    .contenedor-habilidades {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+
+    .tarjeta {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
